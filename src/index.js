@@ -1,4 +1,4 @@
-import './style.css'; // imports global styles
+import './style.scss'; // imports global styles
 
 import { createElement } from 'lwc';
 import App from 'c/app';

@@ -68,14 +68,15 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
+                test: /\.(s(a|c)ss)$/,
                 exclude: [
                     /node_modules/,
                     /modules/
                 ],
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader'
+                    'css-loader',
+                    'sass-loader'
                 ]
             },
             {
